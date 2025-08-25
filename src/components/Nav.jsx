@@ -7,18 +7,20 @@ function Nav() {
         <li>
           <NavLink to='/'>Home</NavLink>
         </li>
-        <li>
+        <ul>
+          <li>
           <NavLink to='cleansers'>Cleansers</NavLink>
-        </li>
-        <li>
-          <NavLink to='moisturizers'>Moisturizers</NavLink>
-        </li>
-        <li>
-          <NavLink to='serums'>Serums</NavLink>
-        </li>
-        <li>
-          <NavLink to='creams'>Creams</NavLink>
-        </li>
+          </li>
+          <li>
+            <NavLink to='moisturizers'>Moisturizers</NavLink>
+          </li>
+          <li>
+            <NavLink to='serums'>Serums</NavLink>
+          </li>
+          <li>
+            <NavLink to='creams'>Creams</NavLink>
+          </li>
+        </ul>
         <li>
           <NavLink to='guide'>Guide</NavLink>
         </li>
