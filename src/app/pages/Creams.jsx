@@ -1,6 +1,8 @@
 function Creams() {
   return (
-    <h1>creams here</h1>
+    <main>
+      <h1>creams here</h1>
+    </main>
   )
 }
 

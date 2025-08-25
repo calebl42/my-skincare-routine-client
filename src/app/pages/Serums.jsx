@@ -1,6 +1,8 @@
 function Serums() {
   return (
-    <h1>serums here</h1>
+    <main>
+      <h1>serums here</h1>
+    </main>
   )
 }
 

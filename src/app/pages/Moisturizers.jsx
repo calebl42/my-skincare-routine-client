@@ -1,6 +1,8 @@
 function Moisturizers() {
   return (
-    <h1>moisturizers here</h1>
+    <main>
+      <h1>moisturizers here</h1>
+    </main>
   )
 }
 
