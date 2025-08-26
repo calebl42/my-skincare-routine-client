@@ -13,8 +13,7 @@ li {
 
 #root {
   display: grid;
-  grid-template: 1fr 5fr 1fr / 1fr 4fr;
-  min-height: 100vh;
+  grid-template: 20vh 130vh 10vh / 1fr 4fr;
 }
 
 header {
@@ -33,9 +32,15 @@ main {
   grid-area: 2 / 2 / 3 / 3; 
 }
 
+.product {
+  display: flex;
+  align-items: center;
+  img {
+    height: 10vh;
+  }
+}
 footer {
   border: 2px solid lightgrey;
   grid-area: 3 / 1 / 4 / 3;
   text-align: center;
-  padding-top: 5vh;
 }

@@ -1,3 +1,4 @@
+import { useState, createContext } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router';
 import './App.css';
 import Header from '../components/Header.jsx';
@@ -11,21 +12,27 @@ import Serums from './pages/Serums.jsx';
 import Guide from './pages/Guide.jsx'
 import ErrorPage from './pages/ErrorPage.jsx';
 
+export const RoutineContext = createContext(null);
+
 function App() {
+  const [ routine, setRoutine ] = useState({cleanser: null, cream: null, moisturizer: null, serum: null});
+  console.log(routine);
   return (
     <BrowserRouter>
-      <Header />
-      <Nav />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='cleansers' element={<Cleansers />} />
-        <Route path='moisturizers' element={<Moisturizers />} />
-        <Route path='serums' element={<Serums />} />
-        <Route path='creams' element={<Creams />} />
-        <Route path='guide' element={<Guide />} />
-        <Route path='*' element={<ErrorPage />} /> 
-      </Routes>
-      <Footer />
+      <RoutineContext value={[ routine, setRoutine ]}>
+        <Header />
+        <Nav />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='cleansers' element={<Cleansers />} />
+          <Route path='moisturizers' element={<Moisturizers />} />
+          <Route path='serums' element={<Serums />} />
+          <Route path='creams' element={<Creams />} />
+          <Route path='guide' element={<Guide />} />
+          <Route path='*' element={<ErrorPage />} /> 
+        </Routes>
+        <Footer />
+      </RoutineContext>
     </BrowserRouter>
   );
 }
