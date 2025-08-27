@@ -16,7 +16,6 @@ export const RoutineContext = createContext(null);
 
 function App() {
   const [ routine, setRoutine ] = useState({cleanser: null, cream: null, moisturizer: null, serum: null});
-  console.log(routine);
   return (
     <BrowserRouter>
       <RoutineContext value={[ routine, setRoutine ]}>

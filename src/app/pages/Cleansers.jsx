@@ -1,16 +1,11 @@
 import { useState } from 'react';
 import Product from '/src/components/Product.jsx';
 
-let uuid = 0;
-function genId() {
-  return uuid++;
-}
-
 function Cleansers() {
   const [ productList, setProductList ] = 
-    useState(defaultJSON['results'].slice(0, 10).map(
+  useState(defaultJSON['results'].slice(0, 10).map(
       prod => {
-        return {...prod, id: genId()};
+        return {...prod, id: crypto.randomUUID(), category: 'cleanser'};
       }
     )
   );

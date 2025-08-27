@@ -8,7 +8,9 @@ function Product({ product }) {
   const navigate = useNavigate();
 
   function handleProductSelection() {
-    setRoutine({...routine, cleanser: product});
+    let newRoutine = structuredClone(routine);
+    newRoutine[product['category']] = product;
+    setRoutine(newRoutine);
     navigate('/');
   }
 
