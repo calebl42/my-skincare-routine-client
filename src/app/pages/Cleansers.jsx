@@ -1,29 +1,11 @@
-import { useState, useContext } from 'react';
-import { RoutineContext } from '../App.jsx';
-
-function Product({ product }) {
-  const [ routine, setRoutine ] = useContext(RoutineContext);
-
-  function handleProductSelection() {
-    setRoutine({...routine, cleanser: product});
-  }
-
-  return (
-    <div className='product'>
-      <img src={product['image']}/>
-      <p>{product['title']}</p>
-      <h4>Stars: {product['stars']}/5</h4>
-      <h4>Reviews: {product['total_reviews']}</h4>
-      <h3>{product['price']}</h3>
-      <button onClick={handleProductSelection}>Add to routine</button>
-    </div>
-  )
-}
+import { useState } from 'react';
+import Product from '/src/components/Product.jsx';
 
 let uuid = 0;
 function genId() {
   return uuid++;
 }
+
 function Cleansers() {
   const [ productList, setProductList ] = 
     useState(defaultJSON['results'].slice(0, 10).map(
@@ -32,7 +14,7 @@ function Cleansers() {
       }
     )
   );
-
+  
   return (
     <main>
       <h1>Facial Cleansers</h1>

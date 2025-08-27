@@ -32,13 +32,6 @@ main {
   grid-area: 2 / 2 / 3 / 3; 
 }
 
-.product {
-  display: flex;
-  align-items: center;
-  img {
-    height: 10vh;
-  }
-}
 footer {
   border: 2px solid lightgrey;
   grid-area: 3 / 1 / 4 / 3;
