@@ -13,7 +13,7 @@ li {
 
 #root {
   display: grid;
-  grid-template: 20vh 130vh 10vh / 1fr 4fr;
+  grid-template: 15vh auto 10vh / 1fr 4fr;
 }
 
 header {

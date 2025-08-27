@@ -1,3 +1,15 @@
-.plus-icon {
-  width: 5vw;
+h2 {
+  text-align: center;
+}
+
+#product-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
