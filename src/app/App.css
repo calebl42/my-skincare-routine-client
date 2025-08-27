@@ -20,6 +20,7 @@ header {
   text-align: center;
   border: 2px solid lightgrey;
   grid-area: 1 / 1 / 2 / 3;
+  position: relative;
 }
 
 nav {
@@ -28,6 +29,7 @@ nav {
 }
 
 main {
+  min-height: 70vh;
   border: 2px solid lightgrey;
   grid-area: 2 / 2 / 3 / 3; 
 }
@@ -35,5 +37,7 @@ main {
 footer {
   border: 2px solid lightgrey;
   grid-area: 3 / 1 / 4 / 3;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

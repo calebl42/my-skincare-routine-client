@@ -12,7 +12,7 @@ function Cleansers() {
   
   return (
     <main>
-      <h1>Facial Cleansers</h1>
+      <h2>Facial Cleansers</h2>
       <ul>{productList.map(prod => <li key={prod.id}><Product product={prod} /></li>)}</ul>
     </main>
   )

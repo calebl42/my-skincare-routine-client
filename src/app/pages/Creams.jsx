@@ -12,7 +12,7 @@ function Creams() {
   
   return (
     <main>
-      <h1>Facial Creams</h1>
+      <h2>Facial Creams</h2>
       <ul>{productList.map(prod => <li key={prod.id}><Product product={prod} /></li>)}</ul>
     </main>
   )

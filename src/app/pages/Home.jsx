@@ -19,14 +19,14 @@ function Home() {
 
   return(
     <main>
-      <h2>Current Loadout</h2>
+      <h2>Current Products</h2>
       <div id={styles['product-container']}>
         <Showcase category='cleanser' />
         <Showcase category='moisturizer' />
         <Showcase category='serum' />
         <Showcase category='cream' />
       </div>
-      <h2>Total price: ${getTotalPrice()}</h2>
+      <h2>Total price: ${Math.round(getTotalPrice() * 100) / 100}</h2>
     </main>
   )
 }

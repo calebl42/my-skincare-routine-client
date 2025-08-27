@@ -12,7 +12,7 @@ function Moisturizers() {
   
   return (
     <main>
-      <h1>Moisturizers</h1>
+      <h2>Moisturizers</h2>
       <ul>{productList.map(prod => <li key={prod.id}><Product product={prod} /></li>)}</ul>
     </main>
   )
