@@ -1,7 +1,27 @@
 .product {
-  display: flex;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 2fr 2fr;
+  gap: 2vh;
   align-items: center;
+  padding: 1vh;
+  border-bottom: 1px solid grey;
+  h3 {
+    text-align: left;
+  }
   img {
-    height: 10vh;
+    max-height: 100px;
+    max-width: 100px;
+  }
+}
+
+.stars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px; 
+  img {
+    width: 20px;
+    height: 20px;
   }
 }

@@ -1,16 +1,30 @@
 
 .product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 25%;
+  display: grid;
+  grid-template: 1fr 3fr 1.3fr 1fr / 1fr;
+  width: 15vw;
+  height: 40vw;
+  justify-items: center;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  border-right: 1.5px solid lightgrey;
   grid-area: 1 / 1 / 2 / 2;
   .plus-icon {
     width: 5vw;
   }
 }
 
+.cream {
+  border: 0;
+}
+
 .product-img {
   max-height: 30vh;
   max-width: 100%;
+}
+
+#showcase-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }

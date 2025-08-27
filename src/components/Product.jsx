@@ -17,10 +17,13 @@ function Product({ product }) {
   return (
     <div className={styles.product}>
       <img src={product['image']}/>
-      <p>{product['title']}</p>
-      <h4>Stars: {product['stars']}/5</h4>
-      <h4>Reviews: {product['total_reviews']}</h4>
-      <h3>{product['price']}</h3>
+      <h3>{product['title'].slice(0, product['title'].indexOf(','))}</h3>
+      <p>{product['price']}</p>
+      <div className={styles['stars-container']}>
+        <p>{product['stars']}/5</p>
+        <img src='src/assets/star.png'/>
+        <p style={{textIndent:'1vh'}}>({product['total_reviews']})</p>
+      </div>
       <button onClick={handleProductSelection}>Add to routine</button>
     </div>
   )

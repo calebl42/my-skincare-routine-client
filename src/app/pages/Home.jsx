@@ -26,7 +26,10 @@ function Home() {
         <Showcase category='serum' />
         <Showcase category='cream' />
       </div>
-      <h2>Total price: ${Math.round(getTotalPrice() * 100) / 100}</h2>
+      <div id={styles['total']}>
+        <img src='/src/assets/cart.png'/>
+        <h2>Total price: ${Math.round(getTotalPrice() * 100) / 100}</h2>
+      </div>
     </main>
   )
 }

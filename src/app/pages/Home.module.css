@@ -1,6 +1,6 @@
 h2 {
   text-align: center;
-  padding: 0;
+  padding: 1vh;
   margin: 0;
 }
 
@@ -8,8 +8,8 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 4vh;
-  gap: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 main {
@@ -18,4 +18,15 @@ main {
   justify-content: space-between;
   padding: 2vh;
   padding-right: 5vh;
+}
+
+#total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  padding: 1vh;
+  img {
+    height: 40px;
+  }
 }

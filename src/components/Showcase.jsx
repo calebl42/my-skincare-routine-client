@@ -15,7 +15,7 @@ function Showcase({ category }) {
   }
 
   return (
-    <section className={styles['product']}>
+    <section className={styles['product'] + ' ' + (category === 'cream' ? styles['cream'] : '')}>
       { !routine[category] &&
         <>
           <h3>{category}</h3>
@@ -26,12 +26,12 @@ function Showcase({ category }) {
       }
       { routine[category] && 
         <>
-          <img src={routine[category]['image']} className={styles['product-img']} />
           <h3>{category}</h3>
+          <img src={routine[category]['image']} className={styles['product-img']} />
           <h4>
             { routine[category]['title'].slice(0, routine[category]['title'].indexOf(',')) }
           </h4>
-          <div>
+          <div id={styles['showcase-buttons']}>
             <button onClick={() => navigate(category + 's')}>change</button>
             <button onClick={handleRemove}>remove</button>
           </div>
