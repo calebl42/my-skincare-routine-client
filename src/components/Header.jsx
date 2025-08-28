@@ -1,7 +1,9 @@
+import skincare from '/src/assets/skincare.png';
+
 function Header() {
   return (
     <header>
-      <img src='/src/assets/skincare.png'/>
+      <img src={skincare} alt='skincare'/>
       <h1>My Skincare Routine</h1>
     </header>
   );

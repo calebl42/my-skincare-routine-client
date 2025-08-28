@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { RoutineContext } from '/src/app/App.jsx';
 import styles from './Showcase.module.css';
 import { useNavigate } from 'react-router-dom';
+import plus from '/src/assets/plus.png';
+import amazon from '/src/assets/amazon.png';
 
 export function getParsedTitle(title) {
   let commaIndex = title.indexOf(',');
@@ -39,7 +41,7 @@ function Showcase({ category }) {
         <>
           <h3>{category}</h3>
           <NavLink to={category + 's'}>
-            <img className={styles['plus-icon']} src='/src/assets/plus.png'/>
+            <img className={styles['plus-icon']} src={plus} alt='plus'/>
           </NavLink>
         </>
       }
@@ -54,7 +56,7 @@ function Showcase({ category }) {
           <div id={styles['showcase-buttons']}>
             <button id={styles['amazon-link']}>
               <a href={routine[category]['optimized_url']} target='_blank'>
-                <img src='/src/assets/amazon.png'/>
+                <img src={amazon} alt='amazon'/>
               </a>
             </button>
             <button onClick={() => navigate(category + 's')}>change</button>

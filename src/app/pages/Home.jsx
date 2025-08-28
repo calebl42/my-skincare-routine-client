@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { RoutineContext } from '/src/app/App.jsx';
 import styles from './Home.module.css';
 import Showcase from '/src/components/Showcase.jsx'
+import cart from '/src/assets/cart.png';
 
 function Home() {
   const [ routine, setRoutine ] = useContext(RoutineContext);
@@ -26,7 +27,7 @@ function Home() {
         <Showcase category='cream' />
       </div>
       <div id={styles['total']}>
-        <img src='/src/assets/cart.png'/>
+        <img src={cart} alt='cart'/>
         <h2>Total price: ${(Math.round(getTotalPrice() * 100) / 100).toFixed(2)}</h2>
       </div>
     </main>
