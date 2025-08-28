@@ -53,7 +53,7 @@ function Showcase({ category }) {
           <p>Price: {' ' + routine[category]['price_string']}</p>
           <div id={styles['showcase-buttons']}>
             <button id={styles['amazon-link']}>
-              <a href={routine[category]['url']} target='_blank'>
+              <a href={routine[category]['optimized_url']} target='_blank'>
                 <img src='/src/assets/amazon.png'/>
               </a>
             </button>

@@ -11,9 +11,16 @@
   grid-area: 1 / 1 / 2 / 2;
   .plus-icon {
     border-radius: 100px;
+    opacity: 50%;
     width: 5vw;
     height: 5vw;
+    transition: all 0.1s ease-in-out;
     -webkit-user-drag: none;
+  }
+
+  .plus-icon:hover {
+    transform: scale(1.2);
+    opacity: 100%;
   }
 }
 

@@ -34,6 +34,11 @@ function Guide() {
             Applying a P.M. moisturizer is the final step in this routine for men. CeraVe recommends choosing a soothing night cream that is rich, yet lightweight, and suitable for most skin types. For normal skin: Look for a ceramide-infused moisturizer, such as CeraVe PM Facial Moisturizing Lotion, to help hydrate and soothe your skin while you sleep. This moisturizing lotion is non-comedogenic, so it won't clog pores or cause acne flare-ups, and contains beneficial ingredients—like hyaluronic acid and niacinamide—to deliver long-lasting moisture benefits throughout the night.
           </p>
         </li>
+        <li>
+          <h3>
+            Article taken from <a href='https://www.cerave.com/skin-smarts/skincare-routines/a-mens-facial-skincare-routine-for-all-skin-types' target='_blank'>cerave.com</a>
+          </h3>
+        </li>
       </ul>
     </main>
   )
