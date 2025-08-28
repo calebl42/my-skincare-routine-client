@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Product from '/src/components/Product.jsx';
+import styles from '/src/components/Product.module.css';
 
 function Moisturizers() {
   const [ productList, setProductList ] = 
@@ -13,7 +14,20 @@ function Moisturizers() {
   return (
     <main>
       <h2>Moisturizers</h2>
-      <ul>{productList.map(prod => <li key={prod.id}><Product product={prod} /></li>)}</ul>
+      <ul>
+        <li className={styles['products-header']}>
+          <p></p>
+          <h3>Product name</h3>
+          <p>Price</p>
+          <p>Stars + Reviews</p>
+          <p></p>
+        </li>
+        {productList.map(prod => 
+          <li key={prod.id}>
+            <Product product={prod} />
+          </li>
+        )}
+      </ul>
     </main>
   )
 }

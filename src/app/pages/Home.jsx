@@ -10,7 +10,6 @@ function Home() {
     let total = 0;
     for (let category of ['cleanser', 'moisturizer', 'cream', 'serum']) {
       if (routine[category]) {
-        console.log('inside getTotalPrice: ' + routine[category]);
         total += Number(routine[category]['price_string'].slice(1));
       }
     }
@@ -28,7 +27,7 @@ function Home() {
       </div>
       <div id={styles['total']}>
         <img src='/src/assets/cart.png'/>
-        <h2>Total price: ${Math.round(getTotalPrice() * 100) / 100}</h2>
+        <h2>Total price: ${(Math.round(getTotalPrice() * 100) / 100).toFixed(2)}</h2>
       </div>
     </main>
   )

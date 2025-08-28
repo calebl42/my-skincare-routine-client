@@ -13,6 +13,33 @@
     max-height: 100px;
     max-width: 100px;
   }
+
+  button {
+    font-family: sans-serif;
+    padding: 10px 0px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid grey;
+    transition: all 0.2s ease-in-out; 
+  }
+
+  button:hover {
+    background-color: grey;
+    color: white;
+    border: 2px solid white;
+  }
+}
+
+.products-header {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  padding-left: 4vw;
+  display: grid;
+  gap: 2vw;
+  align-items: end;
+  grid-template-columns: 1fr 4fr 1fr 2fr 2fr;
 }
 
 .stars-container {

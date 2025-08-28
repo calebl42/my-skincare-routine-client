@@ -1,41 +1,56 @@
-a {
-  text-decoration: none;
-}
-
-a.active {
-  color: red;
+#root {
+  display: grid;
+  grid-template: 15vh auto 10vh / 1fr 4fr;
+  font-family: "Bellota Text", sans-serif;
 }
 
 li {
   list-style: none;
+  padding: 1vh;
 }
 
+a {
+  text-decoration: none;
+  color: grey;
+}
 
-#root {
-  display: grid;
-  grid-template: 15vh auto 10vh / 1fr 4fr;
+a.active {
+  color: black;
+}
+
+p {
+  font-size: 18px;
 }
 
 header {
-  text-align: center;
-  border: 2px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid grey;
   grid-area: 1 / 1 / 2 / 3;
   position: relative;
+  img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+  }
 }
 
 nav {
-  border: 2px solid lightgrey;
+  border-right: 2px solid grey;
+  font-size: 20px;
+  font-weight: 600;
   grid-area: 2 / 1 / 3 / 2;
 }
 
 main {
   min-height: 70vh;
-  border: 2px solid lightgrey;
   grid-area: 2 / 2 / 3 / 3; 
 }
 
 footer {
-  border: 2px solid lightgrey;
+  border-top: 2px solid grey;
   grid-area: 3 / 1 / 4 / 3;
   display: flex;
   justify-content: center;
