@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { RoutineContext } from '/src/app/App.jsx';
 import styles from './Showcase.module.css';
-import { useNavigate } from 'react-router-dom';
 import plus from '/src/assets/plus.png';
 import amazon from '/src/assets/amazon.png';
 
@@ -25,8 +24,7 @@ export function getParsedTitle(title) {
 }
 
 function Showcase({ category }) {
-  const [ routine, setRoutine ] = useContext(RoutineContext);
-  const navigate = useNavigate();
+  const [ routine, setRoutine, navigate ] = useContext(RoutineContext);
 
   function handleRemove() {
     let newRoutine = structuredClone(routine);
@@ -48,7 +46,7 @@ function Showcase({ category }) {
       { routine[category] && 
         <>
           <h3>{category}</h3>
-          <img src={routine[category]['image']} className={styles['product-img']} />
+          <img src={routine[category]['image']} className={styles['product-img']} alt='product' />
           <h3>
             {getParsedTitle(routine[category]['title'])}
           </h3>

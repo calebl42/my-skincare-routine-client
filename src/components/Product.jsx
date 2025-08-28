@@ -1,13 +1,11 @@
 import { useContext } from 'react';
 import { RoutineContext } from '/src/app/App.jsx';
 import styles from './Product.module.css';
-import { useNavigate } from 'react-router-dom';
 import { getParsedTitle } from './Showcase';
 import star from '/src/assets/star.png';
 
 function Product({ product }) {
-  const [ routine, setRoutine ] = useContext(RoutineContext);
-  const navigate = useNavigate();
+  const [ routine, setRoutine, navigate ] = useContext(RoutineContext);
 
   function handleProductSelection() {
     let newRoutine = structuredClone(routine);
@@ -18,7 +16,7 @@ function Product({ product }) {
 
   return (
     <div className={styles.product}>
-      <img src={product['image']}/>
+      <img src={product['image']} alt='product'/>
       <h3>{getParsedTitle(product['title'])}</h3>
       <p>{product['price']}</p>
       <div className={styles['stars-container']}>
