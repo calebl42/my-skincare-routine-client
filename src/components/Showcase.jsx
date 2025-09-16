@@ -50,10 +50,10 @@ function Showcase({ category }) {
           <h3>
             {getParsedTitle(routine[category]['title'])}
           </h3>
-          <p>Price: {' ' + routine[category]['price_string']}</p>
+          <p>Price: {' ' + routine[category]['price']}</p>
           <div id={styles['showcase-buttons']}>
             <button id={styles['amazon-link']}>
-              <a href={routine[category]['optimized_url']} target='_blank'>
+              <a href={routine[category]['url']} target='_blank'>
                 <img src={amazon} alt='amazon'/>
               </a>
             </button>

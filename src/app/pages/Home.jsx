@@ -5,7 +5,7 @@ import Showcase from '/src/components/Showcase.jsx'
 import cart from '/src/assets/cart.png';
 
 function Home() {
-  const [ routine, setRoutine ] = useContext(RoutineContext);
+  const [ routine ] = useContext(RoutineContext);
 
   function getTotalPrice() {
     let total = 0;
