@@ -25,11 +25,11 @@ function App() {
     async function fetchAmazonData() {
       let response = await fetch(`http://${process.env.HOSTNAME}/products?productName=facial cleanser`);
       const cleanserJSON = await response.json();
-      response = await fetch(`http://${process.env.HOSTNAME}.amazonaws.com/products?productName=moisturizer`);
+      response = await fetch(`http://${process.env.HOSTNAME}/products?productName=moisturizer`);
       const moisturizerJSON = await response.json();
-      response = await fetch(`http://${process.env.HOSTNAME}.amazonaws.com/products?productName=serum`);
+      response = await fetch(`http://${process.env.HOSTNAME}/products?productName=serum`);
       const serumJSON = await response.json();
-      response = await fetch(`http://${process.env.HOSTNAME}.amazonaws.com/products?productName=night cream`);
+      response = await fetch(`http://${process.env.HOSTNAME}/products?productName=night cream`);
       const creamJSON = await response.json();
       setAmazonProductData(prev => { 
         return { cleanserJSON, moisturizerJSON, serumJSON, creamJSON };
