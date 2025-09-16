@@ -12,6 +12,7 @@ import Moisturizers from './pages/Moisturizers.jsx';
 import Serums from './pages/Serums.jsx';
 import Guide from './pages/Guide.jsx'
 import ErrorPage from './pages/ErrorPage.jsx';
+import 'dotenv/config'
 
 export const RoutineContext = createContext(null);
 let retrievedData = false;
@@ -22,13 +23,13 @@ function App() {
   const [ loading, setLoading ] = useState(true);
   useEffect(() => {
     async function fetchAmazonData() {
-      let response = await fetch('http://ec2-50-17-20-188.compute-1.amazonaws.com/products?productName=facial cleanser');
+      let response = await fetch(`http://${process.env.HOSTNAME}/products?productName=facial cleanser`);
       const cleanserJSON = await response.json();
-      response = await fetch('http://ec2-50-17-20-188.compute-1.amazonaws.com/products?productName=moisturizer');
+      response = await fetch(`http://${process.env.HOSTNAME}.amazonaws.com/products?productName=moisturizer`);
       const moisturizerJSON = await response.json();
-      response = await fetch('http://ec2-50-17-20-188.compute-1.amazonaws.com/products?productName=serum');
+      response = await fetch(`http://${process.env.HOSTNAME}.amazonaws.com/products?productName=serum`);
       const serumJSON = await response.json();
-      response = await fetch('http://ec2-50-17-20-188.compute-1.amazonaws.com/products?productName=night cream');
+      response = await fetch(`http://${process.env.HOSTNAME}.amazonaws.com/products?productName=night cream`);
       const creamJSON = await response.json();
       setAmazonProductData(prev => { 
         return { cleanserJSON, moisturizerJSON, serumJSON, creamJSON };
