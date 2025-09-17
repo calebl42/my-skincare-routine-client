@@ -22,13 +22,13 @@ function App() {
   const [ loading, setLoading ] = useState(true);
   useEffect(() => {
     async function fetchAmazonData() {
-      let response = await fetch(`https://pumpkinbuns.org/products?productName=facial cleanser`);
+      let response = await fetch(`https://www.pumpkinbuns.org/products?productName=facial cleanser`);
       const cleanserJSON = await response.json();
-      response = await fetch(`https://pumpkinbuns.org/products?productName=moisturizer`);
+      response = await fetch(`https://www.pumpkinbuns.org/products?productName=moisturizer`);
       const moisturizerJSON = await response.json();
-      response = await fetch(`https://pumpkinbuns.org/products?productName=serum`);
+      response = await fetch(`https://www.pumpkinbuns.org/products?productName=serum`);
       const serumJSON = await response.json();
-      response = await fetch(`https://pumpkinbuns.org/products?productName=night cream`);
+      response = await fetch(`https://www.pumpkinbuns.org/products?productName=night cream`);
       const creamJSON = await response.json();
       setAmazonProductData(prev => { 
         return { cleanserJSON, moisturizerJSON, serumJSON, creamJSON };
