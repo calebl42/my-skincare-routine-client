@@ -29,10 +29,19 @@ header {
   border-bottom: 2px solid grey;
   grid-area: 1 / 1 / 2 / 3;
   position: relative;
-  img {
+  div {
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0%;
     left: 0%;
+    height: 100%;
+  }
+  h3 {
+    color: rgb(46, 173, 215);
+    transform: rotate(-10deg);
+  }
+  img {
     height: 100%;
   }
 }

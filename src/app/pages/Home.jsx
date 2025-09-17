@@ -19,7 +19,7 @@ function Home() {
 
   return(
     <main>
-      <h2>Current Products</h2>
+      <h2>Current Routine</h2>
       <div id={styles['product-container']}>
         <Showcase category='cleanser' />
         <Showcase category='moisturizer' />
