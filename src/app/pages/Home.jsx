@@ -11,7 +11,7 @@ function Home() {
     let total = 0;
     for (let category of ['cleanser', 'moisturizer', 'cream', 'serum']) {
       if (routine[category]) {
-        total += Number(routine[category]['price_string'].slice(1));
+        total += Number(routine[category]['price'].slice(1));
       }
     }
     return total;
