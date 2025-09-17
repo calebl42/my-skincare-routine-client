@@ -7,14 +7,12 @@ The entire application uses the [MERN](https://www.mongodb.com/resources/languag
 ## Try it out 👉🏾 [My Skincare Routine](https://my-skincare-routine.vercel.app/)
 
 ## Screenshots
-Main page with current routine
+### Main page with current routine
 <img width="2532" height="1210" alt="Screenshot_20250917_042207" src="https://github.com/user-attachments/assets/496546c7-c69b-4b2f-b8ee-d7a01bc70389" />
 
----
-Picking a facial cleanser
+### Picking a facial cleanser
 <img width="1997" height="1280" alt="Screenshot_20250917_042343" src="https://github.com/user-attachments/assets/4cb592ca-cb82-4d73-be25-5d02bbaf2297" />
 
----
-Cart View
+### Cart View
 <img width="1913" height="1276" alt="Screenshot_20250917_042256" src="https://github.com/user-attachments/assets/c235a8e0-f538-4a24-84ad-8853860fcec6" />
 
