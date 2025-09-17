@@ -10,7 +10,7 @@ function Serums() {
     <div>loading latest products...</div>
   )
 
-  const productList = amazonProductData.cleanserJSON.productList.slice(0, 10).map(
+  const productList = amazonProductData.serumJSON.productList.slice(0, 10).map(
     prod => {
       return {...prod, id: crypto.randomUUID(), category: 'serum'};
     }
