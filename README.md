@@ -4,7 +4,7 @@ A website where you can build your own skincare routine and compare prices of po
 
 The entire application uses the [MERN](https://www.mongodb.com/resources/languages/mern-stack) stack. See the server code [here](https://github.com/calebl42/my-skincare-routine-server/tree/main).
 
-## Try it out 👉🏾 [My Skincare Routine](https://my-skincare-routine.vercel.app/)
+## Try it out here! 👉🏾 [My Skincare Routine](https://my-skincare-routine.vercel.app/)
 
 ## Screenshots
 ### Main page with current routine
