@@ -6,8 +6,6 @@ The entire application uses the [MERN](https://www.mongodb.com/resources/languag
 
 ## Try it out 👉🏾 [My Skincare Routine](https://my-skincare-routine.vercel.app/)
 
----
-
 ## Screenshots
 Main page with current routine
 <img width="2532" height="1210" alt="Screenshot_20250917_042207" src="https://github.com/user-attachments/assets/496546c7-c69b-4b2f-b8ee-d7a01bc70389" />
